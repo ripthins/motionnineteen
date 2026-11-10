@@ -6,8 +6,8 @@
 
 <!-- Primary SEO -->
 <title>Motion Nineteen | Real Estate Photography, 3D Tours &amp; Video — Kailua-Kona, Hawaii</title>
-<meta name="description" content="Listing media for Big Island real estate. Professional listing photography, Zillow 3D Home tours with interactive floor plans, branded and unbranded listing video, and vertical social cuts. Kailua-Kona to Kohala, with fast turnaround."/>
-<meta name="keywords" content="real estate photography Kailua-Kona, listing photos Big Island, Zillow 3D tour Hawaii, 3D home tour Kona, real estate video Hawaii, listing video Big Island, virtual tour Kamuela, real estate media Hawaii, floor plan Kona, vertical social cuts real estate"/>
+<meta name="description" content="Listing media for Big Island real estate. Professional listing photography, FAA Part 107 aerial drone photos, Zillow 3D Home tours with interactive floor plans, branded and unbranded listing video, and vertical social cuts. Book online. Kailua-Kona to Kohala, with fast turnaround."/>
+<meta name="keywords" content="real estate photography Kailua-Kona, listing photos Big Island, drone photography Kona, aerial real estate photography Hawaii, Zillow 3D tour Hawaii, 3D home tour Kona, real estate video Hawaii, listing video Big Island, virtual tour Kamuela, real estate media Hawaii, floor plan Kona, vertical social cuts real estate"/>
 <meta name="author" content="Motion Nineteen"/>
 <link rel="canonical" href="https://www.motionnineteen.com/"/>
 
@@ -50,18 +50,20 @@
     "@type": "AdministrativeArea",
     "name": "Hawaii County, Hawaii"
   },
-  "serviceType": ["Real Estate Photography", "3D Virtual Tours", "Interactive Floor Plans", "Real Estate Videography", "Social Media Video Editing"],
+  "serviceType": ["Real Estate Photography", "Aerial Drone Photography", "3D Virtual Tours", "Interactive Floor Plans", "Real Estate Videography", "Social Media Video Editing"],
   "priceRange": "$$",
   "image": "https://www.motionnineteen.com/images/nohea-08.jpg",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Listing media packages",
     "itemListElement": [
-      {"@type":"Offer","name":"Listing Photos","price":"250","priceCurrency":"USD"},
-      {"@type":"Offer","name":"3D Tour & Interactive Floor Plan","price":"200","priceCurrency":"USD"},
-      {"@type":"Offer","name":"Listing Video","price":"350","priceCurrency":"USD"},
-      {"@type":"Offer","name":"Photos, 3D Tour & Floor Plan","price":"400","priceCurrency":"USD"},
-      {"@type":"Offer","name":"Full Delivery","price":"700","priceCurrency":"USD"}
+      {"@type":"Offer","name":"Listing Photos","price":"275","priceCurrency":"USD"},
+      {"@type":"Offer","name":"Aerial Photography","price":"150","priceCurrency":"USD"},
+      {"@type":"Offer","name":"3D Virtual Tour & Interactive Floor Plan","price":"200","priceCurrency":"USD"},
+      {"@type":"Offer","name":"Cinematic Videography","price":"450","priceCurrency":"USD"},
+      {"@type":"Offer","name":"Photos + Tour","price":"425","priceCurrency":"USD"},
+      {"@type":"Offer","name":"Photos + Video","price":"650","priceCurrency":"USD"},
+      {"@type":"Offer","name":"Full Delivery","price":"895","priceCurrency":"USD"}
     ]
   }
 }
@@ -220,6 +222,13 @@ section{padding:7rem 3rem}
 .svc-price{font-family:'DM Serif Display',serif;font-size:2rem;font-weight:400;color:var(--ink);line-height:1}
 .svc-price-label{font-size:0.7rem;color:var(--muted);letter-spacing:0.08em;margin-top:0.2rem}
 .svc-badge{display:inline-block;background:var(--cyan-light);color:var(--cyan-deep);font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;padding:0.25rem 0.6rem;margin-top:0.5rem}
+.addons{margin-top:3rem}
+.addon-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.85rem 2.5rem}
+.addon{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:0.6rem;border-bottom:0.5px solid var(--border)}
+.addon span{font-size:0.86rem;color:var(--ink2)}
+.addon span:last-child{color:var(--muted);white-space:nowrap}
+.addon em{font-style:normal;font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--cyan);margin-left:0.35rem;white-space:nowrap}
+.addon-note{font-size:0.8rem;color:var(--muted);line-height:1.8;margin-top:1.5rem}
 
 /* ── ABOUT ── */
 #about{background:var(--surface2);padding:7rem 3rem}
@@ -256,12 +265,31 @@ section{padding:7rem 3rem}
 .form-group select{appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%238a8880' stroke-width='0.8'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .form-note{font-size:0.72rem;color:var(--muted);margin-top:0.85rem;line-height:1.6}
+.form-note a{color:var(--cyan);text-decoration:none}
+.form-note a:hover{text-decoration:underline}
+
+/* ── CUSTOM QUOTE ── */
+#quote{background:var(--surface2);padding:7rem 3rem}
+#quote .contact-info-block p{margin-bottom:1.25rem}
+#quote .form-group input,#quote .form-group textarea,#quote .form-group select{background:var(--surface)}
+#quoteBtn:disabled{opacity:0.6;cursor:default}
+#quoteBtn:disabled:hover{background:var(--ink);color:#f9f8f6}
+.form-note.is-ok{color:var(--cyan-deep)}
+
+/* ── BOOKING (Fotello embed) ── */
+.book-panel{border:0.5px solid var(--border);background:var(--surface);box-shadow:0 20px 60px rgba(0,0,0,0.06)}
+.book-bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:0.95rem 1.25rem;background:var(--bg);border-bottom:0.5px solid var(--border)}
+.book-bar-label{display:flex;align-items:center;gap:8px;font-size:0.63rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--cyan);font-weight:500}
+.book-bar-label::before{content:'';display:block;width:6px;height:6px;background:var(--cyan)}
+.book-bar-note{font-size:0.63rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)}
+.book-frame{position:relative;background:#fff}
+.book-frame iframe{display:block;width:100%;height:clamp(660px,84vh,860px);min-height:0 !important;border:0}
 
 /* ── FOOTER ── */
 footer{background:var(--ink);padding:2.5rem 3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-logo .logo-wordmark{color:#f9f8f6}
 .footer-copy{font-size:0.72rem;color:rgba(249,248,246,0.3);letter-spacing:0.06em}
-.footer-links{display:flex;gap:2rem}
+.footer-links{display:flex;gap:0.75rem 2rem;flex-wrap:wrap}
 .footer-links a{font-size:0.72rem;text-decoration:none;color:rgba(249,248,246,0.35);letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s}
 .footer-links a:hover{color:var(--cyan)}
 
@@ -296,13 +324,18 @@ h1.hero-title{animation-delay:0.18s}
   .nav-links{display:none}
   #hero{grid-template-columns:1fr;padding:7rem 1.5rem 4rem;gap:2.5rem}
   .hero-bg-shape{display:none}
-  section,#gallery,#about,#contact,#capabilities,#video,#tour{padding:5rem 1.5rem}
+  section,#gallery,#about,#contact,#quote,#capabilities,#video,#tour{padding:5rem 1.5rem}
   .services-layout{grid-template-columns:1fr;gap:2.5rem}
   .about-layout,.contact-layout{grid-template-columns:1fr;gap:3rem}
   .about-img-tag{right:0}
   footer{flex-direction:column;text-align:center}
   .footer-links{justify-content:center}
   .aerial-grid{grid-template-columns:1fr;gap:2rem}
+  /* booking form comes right after the intro on small screens; contact details drop below it */
+  .contact-layout{display:flex;flex-direction:column;gap:0}
+  .contact-info-block{display:contents}
+  .book-col{order:1;margin:0.5rem 0 3rem}
+  .contact-details{order:2;margin-top:0}
 }
 @media(max-width:900px){
   .hero-mobile-video{display:block}
@@ -376,7 +409,7 @@ h1.hero-title{animation-delay:0.18s}
     </div>
     <div class="hero-stats">
       <div>
-        <div class="hero-stat-val">$200</div>
+        <div class="hero-stat-val">$150</div>
         <div class="hero-stat-label">Starting price</div>
       </div>
       <div>
@@ -475,9 +508,9 @@ h1.hero-title{animation-delay:0.18s}
         <ellipse cx="10" cy="30.5" rx="4" ry="1.6" fill="none" stroke="#f9f8f6" stroke-width="0.7" opacity="0.3"/>
         <ellipse cx="30" cy="30.5" rx="4" ry="1.6" fill="none" stroke="#f9f8f6" stroke-width="0.7" opacity="0.3"/>
       </svg>
-      <p class="aerial-note-txt"><strong>Aerial is coming.</strong> I've been flying for years and the reels further down are mine. FAA Part 107 certification is in progress, and aerials join the menu as a bookable add-on the day it clears.</p>
+      <p class="aerial-note-txt"><strong>Aerials are on the menu.</strong> I'm an FAA Part 107 certified drone pilot, and I've been flying for years &mdash; the reels further down are mine. Book aerials on their own, or get them built into Full Delivery.</p>
     </div>
-    <span class="aerial-pill">Part 107 in progress</span>
+    <span class="aerial-pill">Part 107 certified</span>
   </div>
 </div>
 
@@ -490,7 +523,7 @@ h1.hero-title{animation-delay:0.18s}
     </div>
     <a href="#contact" class="btn btn-ghost" style="font-size:0.72rem">Discuss your listing &rarr;</a>
   </div>
-  <p class="gallery-note">Everything below &mdash; the stills, the 3D tour and the film &mdash; came off <strong>one shoot at 68-1002 Nohea Makai St in Kamuela</strong>. That's what a full delivery looks like.</p>
+  <p class="gallery-note">Everything below &mdash; the stills, the 3D tour and the film &mdash; came off <strong>one shoot at 68-1002 Nohea Makai St in Kamuela</strong>. Add aerials and a vertical cut, and that's a full delivery.</p>
   <div class="gallery-grid">
     <div class="g-item g1"><img src="images/nohea-08.jpg" alt="Twilight exterior with pool and spa, 68-1002 Nohea Makai St, Kamuela" loading="lazy"/><div class="g-overlay"><span class="g-caption">Twilight exterior · Nohea Makai</span></div></div>
     <div class="g-item g2"><img src="images/nohea-14.jpg" alt="Outdoor shower and lava rock garden wall" loading="lazy"/><div class="g-overlay"><span class="g-caption">Outdoor shower · Detail</span></div></div>
@@ -556,7 +589,7 @@ h1.hero-title{animation-delay:0.18s}
   </div>
   <div class="film-cap">
     <span>68-1002 Nohea Makai St · Kamuela, Hawaii</span>
-    <span>Full listing delivery · Photos, 3D tour &amp; film</span>
+    <span>One shoot · Photos, 3D tour &amp; film</span>
   </div>
 
   <div class="aerial-block">
@@ -565,7 +598,7 @@ h1.hero-title{animation-delay:0.18s}
         <p class="section-eyebrow" style="color:rgba(249,248,246,0.4)">Also in the kit</p>
         <h3 style="font-family:'DM Serif Display',serif;font-size:1.75rem;font-weight:400;color:#f9f8f6;line-height:1.15">Aerial &amp; FPV</h3>
       </div>
-      <p style="font-size:0.84rem;color:rgba(249,248,246,0.4);max-width:400px;line-height:1.7">Previous work from the Big Island. FAA Part 107 certification is in progress &mdash; once it clears, aerials become a <span style="color:var(--cyan)">+$150 add-on</span> to any package.</p>
+      <p style="font-size:0.84rem;color:rgba(249,248,246,0.4);max-width:400px;line-height:1.7">Previous work from the Big Island. FAA Part 107 certified &mdash; aerials are <span style="color:var(--cyan)">$150</span> on their own, and included in Full Delivery.</p>
     </div>
     <div class="aerial-grid">
       <div>
@@ -598,15 +631,18 @@ h1.hero-title{animation-delay:0.18s}
       <h2 class="section-title">Services &amp; rates</h2>
       <div class="thin-rule"></div>
       <p>Every price below is the finished thing. Edited, delivery-ready files, turned around fast.</p>
-      <p>Rates cover homes up to 2,500 sq ft. Anything larger, send me the address and I'll quote it.</p>
-      <a href="#contact" class="btn btn-primary" style="margin-top:0.5rem">Get a custom quote</a>
+      <p>Prices shown are for homes up to 2,500 sq ft. Bigger homes are priced by size, and the booking form shows your exact price as soon as you put in the square footage.</p>
+      <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:0.5rem">
+        <a href="#contact" class="btn btn-primary">Book a shoot</a>
+        <a href="#quote" class="btn btn-ghost">Get a custom quote</a>
+      </div>
     </div>
     <div class="services-list">
 
       <div class="svc">
         <div class="svc-left">
           <div class="svc-tag">Most popular</div>
-          <div class="svc-name">Photos, 3D Tour &amp; Floor Plan</div>
+          <div class="svc-name">Photos + Tour</div>
           <p class="svc-desc">One trip, and the listing is covered. Most agents only ever need this one.</p>
           <div class="svc-includes">
             <span class="svc-pill">25&ndash;35 edited photos</span>
@@ -615,9 +651,27 @@ h1.hero-title{animation-delay:0.18s}
           </div>
         </div>
         <div class="svc-right">
-          <div class="svc-price">$400</div>
-          <div class="svc-price-label">per listing</div>
+          <div class="svc-price">$425</div>
+          <div class="svc-price-label">up to 2,500 sq ft</div>
           <div class="svc-badge">Saves $50</div>
+        </div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-left">
+          <div class="svc-tag">Photos &amp; film</div>
+          <div class="svc-name">Photos + Video</div>
+          <p class="svc-desc">The photos plus the walkthrough film, with a vertical cut ready for Reels and TikTok.</p>
+          <div class="svc-includes">
+            <span class="svc-pill">25&ndash;35 edited photos</span>
+            <span class="svc-pill">Listing video</span>
+            <span class="svc-pill">Vertical social cut</span>
+          </div>
+        </div>
+        <div class="svc-right">
+          <div class="svc-price">$650</div>
+          <div class="svc-price-label">up to 2,500 sq ft</div>
+          <div class="svc-badge">Saves $155</div>
         </div>
       </div>
 
@@ -625,17 +679,18 @@ h1.hero-title{animation-delay:0.18s}
         <div class="svc-left">
           <div class="svc-tag">Everything</div>
           <div class="svc-name">Full Delivery</div>
-          <p class="svc-desc">Photos, tour, floor plan and video &mdash; the whole marketing package. This is what Nohea Makai got.</p>
+          <p class="svc-desc">Photos, aerials, 3D tour, floor plan, video and a vertical cut. The whole marketing package, from one shoot.</p>
           <div class="svc-includes">
-            <span class="svc-pill">Everything above</span>
+            <span class="svc-pill">Photos &amp; 3D tour</span>
+            <span class="svc-pill">Aerials</span>
             <span class="svc-pill">Listing video</span>
-            <span class="svc-pill">Branded &amp; unbranded cuts</span>
+            <span class="svc-pill">Vertical cut</span>
           </div>
         </div>
         <div class="svc-right">
-          <div class="svc-price">$700</div>
-          <div class="svc-price-label">per listing</div>
-          <div class="svc-badge">Saves $100</div>
+          <div class="svc-price">$895</div>
+          <div class="svc-price-label">up to 2,500 sq ft</div>
+          <div class="svc-badge">Saves $260</div>
         </div>
       </div>
 
@@ -651,15 +706,32 @@ h1.hero-title{animation-delay:0.18s}
           </div>
         </div>
         <div class="svc-right">
-          <div class="svc-price">$250</div>
-          <div class="svc-price-label">per listing</div>
+          <div class="svc-price">$275</div>
+          <div class="svc-price-label">up to 2,500 sq ft</div>
+        </div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-left">
+          <div class="svc-tag">Aerial</div>
+          <div class="svc-name">Aerial Photography</div>
+          <p class="svc-desc">Drone stills of the house, the lot and the neighborhood, so buyers see the setting and not just the rooms.</p>
+          <div class="svc-includes">
+            <span class="svc-pill">Drone stills</span>
+            <span class="svc-pill">Lot &amp; neighborhood</span>
+            <span class="svc-pill">FAA Part 107 certified</span>
+          </div>
+        </div>
+        <div class="svc-right">
+          <div class="svc-price">$150</div>
+          <div class="svc-price-label">any size</div>
         </div>
       </div>
 
       <div class="svc">
         <div class="svc-left">
           <div class="svc-tag">Virtual tour</div>
-          <div class="svc-name">3D Tour &amp; Floor Plan</div>
+          <div class="svc-name">3D Virtual Tour</div>
           <p class="svc-desc">A walkable Zillow 3D Home tour with an interactive floor plan, so buyers on the mainland can spend real time in a property before they book a flight.</p>
           <div class="svc-includes">
             <span class="svc-pill">Interactive floor plan</span>
@@ -669,31 +741,31 @@ h1.hero-title{animation-delay:0.18s}
         </div>
         <div class="svc-right">
           <div class="svc-price">$200</div>
-          <div class="svc-price-label">per listing</div>
+          <div class="svc-price-label">up to 2,500 sq ft</div>
         </div>
       </div>
 
       <div class="svc">
         <div class="svc-left">
           <div class="svc-tag">Video</div>
-          <div class="svc-name">Listing Video</div>
-          <p class="svc-desc">A walkthrough cut that shows how a house actually flows. Delivered branded for your socials and unbranded for the MLS.</p>
+          <div class="svc-name">Cinematic Videography</div>
+          <p class="svc-desc">A gimbal walkthrough that shows how a house actually flows. Delivered branded for your socials and unbranded for the MLS.</p>
           <div class="svc-includes">
             <span class="svc-pill">Branded &amp; unbranded</span>
             <span class="svc-pill">MLS ready</span>
-            <span class="svc-pill">Vertical cut available</span>
+            <span class="svc-pill">Vertical cut +$80</span>
           </div>
         </div>
         <div class="svc-right">
-          <div class="svc-price">$350</div>
-          <div class="svc-price-label">per listing</div>
+          <div class="svc-price">$450</div>
+          <div class="svc-price-label">up to 2,500 sq ft</div>
         </div>
       </div>
 
       <div class="svc">
         <div class="svc-left">
           <div class="svc-tag">Social</div>
-          <div class="svc-name">Vertical Social Cuts</div>
+          <div class="svc-name">Vertical Social Cut</div>
           <p class="svc-desc">9:16 edits for Reels, TikTok and Stories &mdash; from the shoot, or freelance from footage you already have.</p>
           <div class="svc-includes">
             <span class="svc-pill">Reels &amp; TikTok</span>
@@ -701,40 +773,24 @@ h1.hero-title{animation-delay:0.18s}
           </div>
         </div>
         <div class="svc-right">
-          <div class="svc-price">+$100</div>
+          <div class="svc-price">+$80</div>
           <div class="svc-price-label">with a shoot</div>
-          <div class="svc-badge">Standalone quoted</div>
+          <a href="#quote" class="svc-badge" style="text-decoration:none">Your footage? Get a quote</a>
         </div>
       </div>
 
-      <!-- ADD-ONS -->
-      <div style="margin-top:3rem">
+      <!-- ADD-ONS (match Fotello: Products > Add-ons, Travel Fee, Custom Fee) -->
+      <div class="addons">
         <p class="section-eyebrow" style="margin-bottom:1.25rem">Add-ons</p>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.85rem 2.5rem">
-          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:0.6rem;border-bottom:0.5px solid var(--border)">
-            <span style="font-size:0.86rem;color:var(--ink2)">Twilight shoot</span>
-            <span style="font-size:0.86rem;color:var(--muted);white-space:nowrap">+$150</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:0.6rem;border-bottom:0.5px solid var(--border)">
-            <span style="font-size:0.86rem;color:var(--ink2)">Vertical cut for social</span>
-            <span style="font-size:0.86rem;color:var(--muted);white-space:nowrap">+$100</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:0.6rem;border-bottom:0.5px solid var(--border)">
-            <span style="font-size:0.86rem;color:var(--ink2)">Same-day delivery</span>
-            <span style="font-size:0.86rem;color:var(--muted);white-space:nowrap">+$75</span>
-          </div>
-<!-- AERIALS: uncomment this block once the Part 107 certificate is in hand.
-          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:0.6rem;border-bottom:0.5px solid var(--border)">
-            <span style="font-size:0.86rem;color:var(--ink2)">Aerials</span>
-            <span style="font-size:0.86rem;color:var(--muted);white-space:nowrap">+$150</span>
-          </div>
--->
-          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:0.6rem;border-bottom:0.5px solid var(--border)">
-            <span style="font-size:0.86rem;color:var(--ink2)">Travel past Keauhou or Waikoloa</span>
-            <span style="font-size:0.86rem;color:var(--muted);white-space:nowrap">+$75</span>
-          </div>
+        <div class="addon-grid">
+          <div class="addon"><span>Same-day delivery</span><span>+$100</span></div>
+          <div class="addon"><span>Twilight shoot <em>Kona only</em></span><span>+$150</span></div>
+          <div class="addon"><span>Virtual twilight</span><span>+$35</span></div>
+          <div class="addon"><span>Virtual staging</span><span>+$35</span></div>
+          <div class="addon"><span>Property website</span><span>+$20</span></div>
+          <div class="addon"><span>Marketing kit</span><span>+$5</span></div>
         </div>
-        <p style="font-size:0.8rem;color:var(--muted);line-height:1.8;margin-top:1.5rem">Reschedules inside 24 hours are $75.</p>
+        <p class="addon-note">Travel is free for the first 15 miles, then $1.25 a mile. Reschedules inside 24 hours are $75. Prices don't include Hawaii GET (4.712%), which is added at checkout.</p>
       </div>
 
     </div>
@@ -775,7 +831,7 @@ h1.hero-title{animation-delay:0.18s}
           <div class="stat-label">Service area</div>
         </div>
       </div>
-      <div class="about-cert">FAA Part 107 certification in progress</div>
+      <div class="about-cert">FAA Part 107 certified drone pilot</div>
     </div>
   </div>
 </section>
@@ -784,10 +840,11 @@ h1.hero-title{animation-delay:0.18s}
 <section id="contact">
   <div class="contact-layout">
     <div class="contact-info-block">
-      <p class="section-eyebrow">Contact</p>
+      <p class="section-eyebrow">Book a shoot</p>
       <h2 class="section-title">Let's shoot<br><em>your next listing</em></h2>
       <div class="thin-rule"></div>
-      <p>Send me the address and the date it goes live, and I'll tell you what I'd shoot and what it costs. I reply within a day.</p>
+      <p>Put in the address, pick a package and a time, and you're on the calendar. No back-and-forth.</p>
+      <p>Something that doesn't fit a package? <a href="#quote" style="color:var(--cyan);text-decoration:none">Ask for a custom quote</a> and I'll get back to you within a day.</p>
       <div class="contact-details">
         <div>
           <div class="cd-item-label">Email</div>
@@ -807,41 +864,76 @@ h1.hero-title{animation-delay:0.18s}
         </div>
       </div>
     </div>
-    <div>
+    <div class="book-col">
+      <div class="book-panel">
+        <div class="book-bar">
+          <span class="book-bar-label">Book online</span>
+          <span class="book-bar-note">Address &middot; Package &middot; Time</span>
+        </div>
+        <!-- Fotello order form. Their script drops an iframe in right here; .book-frame iframe styles it. -->
+        <div class="book-frame">
+          <script src="https://motionnineteen.fotello.co/embeds/motionnineteen?form=default"></script>
+        </div>
+      </div>
+      <p class="form-note">Form not loading? <a href="https://motionnineteen.fotello.co/book/default" target="_blank" rel="noopener">Open booking in a new tab</a> or email <a href="mailto:motionnineteen@gmail.com">motionnineteen@gmail.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOM QUOTE -->
+<section id="quote">
+  <div class="contact-layout">
+    <div class="contact-info-block">
+      <p class="section-eyebrow">Custom quote</p>
+      <h2 class="section-title">Doesn't fit<br><em>a package?</em></h2>
+      <div class="thin-rule"></div>
+      <p>Land and lots, a batch of listings at once, brand content, or vertical cuts from footage you already have. Tell me what you need and I'll send you a price.</p>
+      <p>This goes straight to my inbox. I reply within a day.</p>
+    </div>
+    <form id="quoteForm" novalidate>
       <div class="form-row">
         <div class="form-group">
-          <label for="fname">First name</label>
-          <input type="text" id="fname" placeholder="Jane"/>
+          <label for="q-fname">First name</label>
+          <input type="text" id="q-fname" autocomplete="given-name" placeholder="Jane"/>
         </div>
         <div class="form-group">
-          <label for="lname">Last name</label>
-          <input type="text" id="lname" placeholder="Smith"/>
+          <label for="q-lname">Last name</label>
+          <input type="text" id="q-lname" autocomplete="family-name" placeholder="Smith"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="q-email">Email</label>
+          <input type="email" id="q-email" autocomplete="email" placeholder="jane@email.com" required/>
+        </div>
+        <div class="form-group">
+          <label for="q-phone">Phone <span style="text-transform:none;letter-spacing:0">(optional)</span></label>
+          <input type="tel" id="q-phone" autocomplete="tel" placeholder="808-555-0123"/>
         </div>
       </div>
       <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="jane@email.com"/>
+        <label for="q-address">Property address or area</label>
+        <input type="text" id="q-address" placeholder="Street address, or just the area"/>
       </div>
       <div class="form-group">
-        <label for="service">What do you need?</label>
-        <select id="service">
-          <option value="">Select a service...</option>
-          <option>Photos, 3D Tour &amp; Floor Plan ($400)</option>
-          <option>Full Delivery ($700)</option>
-          <option>Listing Photos ($250)</option>
-          <option>3D Tour &amp; Floor Plan ($200)</option>
-          <option>Listing Video ($350)</option>
-          <option>Vertical Social Cuts</option>
+        <label for="q-type">What do you need?</label>
+        <select id="q-type">
+          <option value="">Select one...</option>
+          <option>Land or lot</option>
+          <option>Several listings at once</option>
+          <option>Vertical cuts from my footage</option>
+          <option>Brand or commercial content</option>
           <option>Something else</option>
         </select>
       </div>
       <div class="form-group">
-        <label for="msg">Tell me about the listing</label>
-        <textarea id="msg" placeholder="Address, square footage, when it goes live..."></textarea>
+        <label for="q-msg">Details</label>
+        <textarea id="q-msg" placeholder="Square footage, timing, what it's for..."></textarea>
       </div>
-      <button type="button" id="sendBtn" class="btn btn-primary">Send message</button>
-      <p class="form-note">This opens your email app with the details filled in. Prefer to write it yourself? <a href="mailto:motionnineteen@gmail.com" style="color:var(--cyan);text-decoration:none">motionnineteen@gmail.com</a></p>
-    </div>
+      <input type="text" id="q-hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0"/>
+      <button type="submit" id="quoteBtn" class="btn btn-primary">Request a quote</button>
+      <p class="form-note" id="quoteNote" role="status">Prefer email? <a href="mailto:motionnineteen@gmail.com">motionnineteen@gmail.com</a></p>
+    </form>
   </div>
 </section>
 
@@ -857,26 +949,63 @@ h1.hero-title{animation-delay:0.18s}
     <a href="#tour">3D Tours</a>
     <a href="#video">Video</a>
     <a href="#services">Pricing</a>
+    <a href="#quote">Custom quote</a>
     <a href="mailto:motionnineteen@gmail.com">Email</a>
   </div>
 </footer>
 
 <script>
+/* Custom quote form. Sends through FormSubmit (formsubmit.co) to the Gmail inbox.
+   The very first submission only triggers an "Activate Form" email to motionnineteen@gmail.com. */
 (function(){
-  var btn = document.getElementById('sendBtn');
-  if(!btn) return;
+  var form = document.getElementById('quoteForm');
+  if(!form) return;
+  var MAIL = 'motionnineteen@gmail.com';
+  var btn = document.getElementById('quoteBtn');
+  var note = document.getElementById('quoteNote');
   function val(id){ var el = document.getElementById(id); return el ? el.value.trim() : ''; }
-  btn.addEventListener('click', function(){
-    var f = val('fname'), l = val('lname'), em = val('email'), s = val('service'), m = val('msg');
-    var name = (f + ' ' + l).trim();
-    var subject = 'Shoot inquiry' + (s ? ' — ' + s : '') + (name ? ' — ' + name : '');
-    var body = 'Name: ' + (name || '—') + '\n'
-             + 'Email: ' + (em || '—') + '\n'
-             + 'Service: ' + (s || '—') + '\n\n'
-             + (m || '');
-    window.location.href = 'mailto:motionnineteen@gmail.com'
-      + '?subject=' + encodeURIComponent(subject)
-      + '&body=' + encodeURIComponent(body);
+  function say(html, ok){ note.innerHTML = html; note.className = 'form-note' + (ok ? ' is-ok' : ''); }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(val('q-hp')) return; // bot filled the hidden field
+    var email = val('q-email');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+      say('Add your email so I can send the quote back.');
+      document.getElementById('q-email').focus();
+      return;
+    }
+    var name = (val('q-fname') + ' ' + val('q-lname')).trim();
+    var type = val('q-type');
+    var data = {
+      name: name || '-',
+      email: email,
+      phone: val('q-phone') || '-',
+      property: val('q-address') || '-',
+      request: type || '-',
+      details: val('q-msg') || '-',
+      _subject: 'Quote request' + (type ? ' - ' + type : '') + (name ? ' - ' + name : ''),
+      _template: 'table',
+      _captcha: 'false'
+    };
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    fetch('https://formsubmit.co/ajax/' + MAIL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(res){
+      if(String(res.success) !== 'true') throw new Error(res.message || 'not sent');
+      form.reset();
+      btn.textContent = 'Sent';
+      say('Got it. I’ll get back to you within a day.', true);
+    })
+    .catch(function(){
+      btn.disabled = false;
+      btn.textContent = 'Request a quote';
+      say('That didn’t go through. Email me instead: <a href="mailto:' + MAIL + '">' + MAIL + '</a>');
+    });
   });
 })();
 </script>
