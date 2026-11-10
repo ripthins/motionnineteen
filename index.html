@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<script>
+/* The Fotello booking form only works on https. Send any http visitor to the https version. */
+if(location.protocol==='http:'&&/(^|\.)motionnineteen\.com$/.test(location.hostname)){location.replace('https://'+location.host+location.pathname+location.search+location.hash);}
+</script>
 
 <!-- Primary SEO -->
 <title>Motion Nineteen | Real Estate Photography, 3D Tours &amp; Video — Kailua-Kona, Hawaii</title>
